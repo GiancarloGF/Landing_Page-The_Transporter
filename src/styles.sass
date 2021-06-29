@@ -1,0 +1,150 @@
+// @import 'serviciosItems'
+
+// Variables
+$color-1: #000
+$color-2: #fff
+$color-3: yellow
+$color-4: skyblue
+
+$brkpnt-1: 850px
+
+// MIXINS
+@mixin section
+      width: 100vw
+      padding: 7%
+@mixin grid-position($gri, $gre,$gci,$gce)
+      grid-row-start: $gri
+      grid-row-end: $gre
+      grid-column-start: $gci
+      grid-column-end: $gce
+      background-color: grey
+      
+// GLOBAL
+*
+      margin: 0
+      padding: 0
+      box-sizing: border-box
+
+            
+
+.navbar
+      background-color: $color-1 !important
+
+.navbar-collapse
+      justify-content: flex-end
+      
+.carousel-main 
+      display: flex
+      justify-content: center
+
+.carousel
+      height: 90vh
+      width:100vw
+      @media screen and ( max-width: $brkpnt-1  )
+            height: 70vh
+            
+      
+      .carousel-inner
+            height:100%
+      .carousel-item
+            height:100%
+      carousel__img
+            height: 100%
+
+.section
+      width: 100vw
+      height:100vh
+      padding: 7%
+      
+      text-align: center
+      @media screen and ( max-width: $brkpnt-1  )
+            height: 70vh
+            padding: 7% 3% 7% 3%
+      
+      
+
+.section__title
+      height:10%    
+.section__content 
+      height: 90%
+
+
+.section__content-nosotros
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(2, 1fr)
+      grid-row-gap: 50px
+      @media screen and ( max-width: $brkpnt-1  )
+            grid-row-gap: 5px
+            grid-template-rows: 1fr 2fr
+      .nosotros__main
+            grid-column: 1/3
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            align-items: center
+            @media screen and ( max-width: $brkpnt-1  )
+                  grid-template-columns: 1fr
+            .nosotros__img
+                  @media screen and ( max-width: $brkpnt-1  )
+                        display: none
+
+      .nosotros-mision
+            grid-column: 1/2
+      .nosotros-vision
+            grid-column: 2/3
+
+
+
+.section__content-servicios
+      margin-top: 50px
+      display: grid
+      grid-template-columns: repeat(10, 1fr)
+      grid-template-rows: repeat(8, 1fr)
+      grid-gap: 5px
+      
+.section-contacto
+      height: 90vh
+      
+      
+.section__content-contacto
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-template-rows: 1fr
+
+      form
+            grid-column: 3/5
+            align-self: center
+      
+
+
+      
+p
+      text-align: center
+      
+
+.one
+      @include grid-position(1,3,2,6)
+.two
+      @include grid-position(1,3,6,10)
+.three
+      @include grid-position(3,5,2,4)
+.four
+      @include grid-position(3,5,4,6)
+.five
+      @include grid-position(3,5,6,8)
+.six
+      @include grid-position(3,5,8,10)
+.seven
+      @include grid-position(5,7,2,4)
+.eight
+      @include grid-position(5,7,4,6)
+.nine
+      @include grid-position(5,7,6,8)
+.ten
+      @include grid-position(5,7,8,10)
+.eleven
+      @include grid-position(7,9,2,10)
+
+.main-footer
+      background-color: $color-1
+      height: 10vh

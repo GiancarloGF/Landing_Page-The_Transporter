@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #000 !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.carousel-main {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  height: 90vh;
+  width: 100vw;
+}
+@media screen and (max-width: 850px) {
+  .carousel {
+    height: 70vh;
+  }
+}
+.carousel .carousel-inner {
+  height: 100%;
+}
+.carousel .carousel-item {
+  height: 100%;
+}
+.carousel carousel__img {
+  height: 100%;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  padding: 7%;
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .section {
+    height: 70vh;
+    padding: 7% 3% 7% 3%;
+  }
+}
+
+.section__title {
+  height: 10%;
+}
+
+.section__content {
+  height: 90%;
+}
+
+.section__content-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 50px;
+}
+@media screen and (max-width: 850px) {
+  .section__content-nosotros {
+    grid-row-gap: 5px;
+    grid-template-rows: 1fr 2fr;
+  }
+}
+.section__content-nosotros .nosotros__main {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+@media screen and (max-width: 850px) {
+  .section__content-nosotros .nosotros__main {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section__content-nosotros .nosotros__main .nosotros__img {
+    display: none;
+  }
+}
+.section__content-nosotros .nosotros-mision {
+  grid-column: 1/2;
+}
+.section__content-nosotros .nosotros-vision {
+  grid-column: 2/3;
+}
+
+.section__content-servicios {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 5px;
+}
+
+.section-contacto {
+  height: 90vh;
+}
+
+.section__content-contacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+.section__content-contacto form {
+  grid-column: 3/5;
+  align-self: center;
+}
+
+p {
+  text-align: center;
+}
+
+.one {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  background-color: grey;
+}
+
+.two {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  background-color: grey;
+}
+
+.three {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: grey;
+}
+
+.four {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  background-color: grey;
+}
+
+.five {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  background-color: grey;
+}
+
+.six {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  background-color: grey;
+}
+
+.seven {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: grey;
+}
+
+.eight {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  background-color: grey;
+}
+
+.nine {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  background-color: grey;
+}
+
+.ten {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  background-color: grey;
+}
+
+.eleven {
+  grid-row-start: 7;
+  grid-row-end: 9;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  background-color: grey;
+}
+
+.main-footer {
+  background-color: #000;
+  height: 10vh;
+}
+
+/*# sourceMappingURL=styles.css.map */
