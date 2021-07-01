@@ -2,53 +2,39 @@
 @import 'medias'
 
 //SECTIONS
-.section
-      width: 100%
-      height:100vh
-      padding: 5%
-      text-align: center
-      display: grid
-      grid-template-columns: 1fr
-      grid-template-rows: 10% 90%
+
       
-// .section__title
-//       grid-row: 1/2
-//       grid-column: 1/3    
-// .section__content 
-//       height: 90%
-// Section-carousel
-.section-carousel
+.carousel
       background-color: #131a28
 
 
-
 // Section-nosotros
-.section-nosotros
+.nosotros
       background-color: #0984b1
-.section__content-nosotros
+.nosotros__content
       display: grid
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: repeat(2, 1fr)
       grid-row-gap: 30px
       grid-column-gap: 30px
-      .nosotros__main
+      .quienes
             grid-column: 1/2
             grid-row: 1/2
             background-color: #00485b
             @include f-center-total(column)
-      .nosotros__img
+      .img-nosotros
             grid-column: 2/3
             grid-row: 1/2
             background-color: #00485b
             @include f-center-total(row)
             img
                   height:80%
-      .nosotros__mision
+      .mision
             grid-column: 1/2
             grid-row: 2/3
             background-color: #00485b
             @include f-center-total(column)
-      .nosotros__vision
+      .vision
             grid-column: 2/3
             grid-row: 2/3
             background-color: #00485b
@@ -57,26 +43,27 @@
 
 
 // Section-servicios
-.section-servicios
+.servicios
       background-color: #0e4965
-.section__content-servicios
+.servicios__content
       margin-top: 20px
       display: grid
       grid-template-columns: repeat(4, 1fr)
       grid-template-rows: repeat(4, 1fr)
       grid-gap: 5px
+.servicios__item
+      background-color: grey
 
 // Section-Contacto
-.section-contacto
-      height: 85vh
-      
-.section__content-contacto
+.contacto
+      height: 85vh     
+.contacto__content
       display: grid
       grid-template-columns: repeat(4, 1fr)
       grid-template-rows: 1fr
 
 // Section-footer
-.section-footer
+.footer
       background-color: $color-1
       height: 15vh
 

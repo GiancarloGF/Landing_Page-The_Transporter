@@ -30,6 +30,9 @@ form {
   align-self: center;
 }
 
+/** ===================
+ *    Custom Bootstrap
+ *    ================= **/   
 .navbar {
   background-color: #000 !important;
 }
@@ -39,96 +42,8 @@ form {
 }
 
 /** ===================
- *    POSITIONS ITEMS
+ *    Components
  *    ================= **/
-.one {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  background-color: grey;
-}
-
-.two {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  background-color: grey;
-}
-
-.three {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background-color: grey;
-}
-
-.four {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: grey;
-}
-
-.five {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  background-color: grey;
-}
-
-.six {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  background-color: grey;
-}
-
-.seven {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background-color: grey;
-}
-
-.eight {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: grey;
-}
-
-.nine {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  background-color: grey;
-}
-
-.ten {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  background-color: grey;
-}
-
-.eleven {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  background-color: grey;
-}
-
 .section {
   width: 100%;
   height: 100vh;
@@ -139,22 +54,102 @@ form {
   grid-template-rows: 10% 90%;
 }
 
-.section-carousel {
+/** ===================
+ *    POSITIONS ITEMS
+ *    ================= **/
+.one {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.two {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.three {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.four {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.five {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.six {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.seven {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.eight {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.nine {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.ten {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.eleven {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.carousel {
   background-color: #131a28;
 }
 
-.section-nosotros {
+.nosotros {
   background-color: #0984b1;
 }
 
-.section__content-nosotros {
+.nosotros__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 30px;
   grid-column-gap: 30px;
 }
-.section__content-nosotros .nosotros__main {
+.nosotros__content .quienes {
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: #00485b;
@@ -163,7 +158,7 @@ form {
   justify-content: center;
   align-items: center;
 }
-.section__content-nosotros .nosotros__img {
+.nosotros__content .img-nosotros {
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: #00485b;
@@ -172,10 +167,10 @@ form {
   justify-content: center;
   align-items: center;
 }
-.section__content-nosotros .nosotros__img img {
+.nosotros__content .img-nosotros img {
   height: 80%;
 }
-.section__content-nosotros .nosotros__mision {
+.nosotros__content .mision {
   grid-column: 1/2;
   grid-row: 2/3;
   background-color: #00485b;
@@ -184,7 +179,7 @@ form {
   justify-content: center;
   align-items: center;
 }
-.section__content-nosotros .nosotros__vision {
+.nosotros__content .vision {
   grid-column: 2/3;
   grid-row: 2/3;
   background-color: #00485b;
@@ -194,11 +189,11 @@ form {
   align-items: center;
 }
 
-.section-servicios {
+.servicios {
   background-color: #0e4965;
 }
 
-.section__content-servicios {
+.servicios__content {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -206,17 +201,21 @@ form {
   grid-gap: 5px;
 }
 
-.section-contacto {
+.servicios__item {
+  background-color: grey;
+}
+
+.contacto {
   height: 85vh;
 }
 
-.section__content-contacto {
+.contacto__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
 }
 
-.section-footer {
+.footer {
   background-color: #000;
   height: 15vh;
 }

@@ -18,7 +18,7 @@ $brkpnt-1: 850px
       grid-row-end: $gre
       grid-column-start: $gci
       grid-column-end: $gce
-      background-color: grey
+      
 @mixin f-center-total($direction)
       display: flex
       flex-direction: $direction
@@ -45,14 +45,31 @@ form
       grid-column: 3/5
       align-self: center
 
+/** ===================
+      Custom Bootstrap
+      ================= **/   
 .navbar
       background-color: $color-1 !important
 
 .navbar-collapse
       justify-content: flex-end
+
+/** ===================
+      Components
+      ================= **/
+.section
+      width: 100%
+      height:100vh
+      padding: 5%
+      text-align: center
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: 10% 90%
+
 /** ===================
       POSITIONS ITEMS
       ================= **/
+
 .one
       @include grid-position(1,2,1,3)
 .two
