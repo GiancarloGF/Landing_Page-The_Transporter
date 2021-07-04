@@ -1,6 +1,7 @@
 
 $c-yellow:#fbc00e
-$c-blue:#045174
+// $c-blue:#045174
+$c-blue:#000028
 $c-orange:#e87a00
  
 // ==========================================abajo
@@ -19,7 +20,7 @@ html
       scroll-behavior: smooth
 
 body
-      background-color: $c-blue
+      // background-color: $c-blue
       font-family: 'Work Sans', rial, Helvetica, sans-serif
       line-height:2
       padding: 0
@@ -29,7 +30,7 @@ body
       background-color: $c-orange
 
 a
-      color: $c-yellow
+      color: $c-blue
       text-decoration: none
       padding: 10px
       transition: color 0.2s ease-in-out
@@ -47,5 +48,20 @@ h2
 h3
       font-size: 1.5rem
       text-align: center
+
+.btn
+      width: 60%
+      height: 50px
+      font-size: 1.8rem
+      border-radius: 10px
+      cursor: pointer
+      border-style: none
+      transition: all 0.1s ease-in-out
+      &:hover
+            transform: scale(1.05)
+.btn--contacto
+      background: $c-blue
+      color:#fff
+
 // ==========================================arriba
 

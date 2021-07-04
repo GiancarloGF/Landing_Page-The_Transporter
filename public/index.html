@@ -14,15 +14,15 @@
       <title>The Transporter</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
       <!-- HEADER -->
       <header> 
         <!-- Menu -->
         <div class="menu">
           <div class="menu__left">
                 <ul>
-                      <li><a href="#main">INICIO</a></li>
-                      <li><a href="#work">SERVICIOS</a></li>
+                      <li><a href="#container">INICIO</a></li>
+                      <li><a href="#servicios">SERVICIOS</a></li>
                 </ul>
           </div>
           <div class="menu__logo">
@@ -30,8 +30,8 @@
           </div>
           <div class="menu__right">
                 <ul>
-                      <li><a href="#about">NOSOTROS</a></li>
-                      <li><a href="#contact">CONTACTO</a></li>
+                      <li><a href="#nosotros">NOSOTROS</a></li>
+                      <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
           </div>
         </div>
@@ -49,10 +49,10 @@
 
                 <div id="menu-mobile-items" class="menu-mobile--closed">
                       <ul>
-                            <li><a href="#main">INICIO</a></li>
-                            <li><a href="#work">SERVICIOS</a></li>
-                            <li><a href="#about">NOSOTROS</a></li>
-                            <li><a href="#contact">CONTACTO</a></li>
+                            <li><a href="#container">INICIO</a></li>
+                            <li><a href="#servicios">SERVICIOS</a></li>
+                            <li><a href="#nosotros">NOSOTROS</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
                       </ul>
                 </div>
           </div>
@@ -60,7 +60,19 @@
 
       </header>
       <main>
-        <section class ="work" id="work">
+        <section class="transporter">
+          <div class="transporter__main">
+            <h1>THE TRANSPORTER</h1>
+            <p>Muévete en confianza y seguro. <br>Soporte 24/7.
+            <br>Autos desinfectados después de cada viaje.</p>
+            
+            <button type="" class="transporter__btn btn btn--contacto">Contactanos</button>
+          </div>
+          <div class="transporter__img">
+            <img src="img/main-2.jpg" width="100%" alt="">
+          </div>
+        </section>
+        <section class ="work" id="servicios">
           <h2>SERVICIOS</h2>
             <div class="grid work__content">
                  <!-- ITEM -->
@@ -165,7 +177,7 @@
                 </a>
 
            </div>
-    </section>
+        </section>
 
       </main>
       <footer>

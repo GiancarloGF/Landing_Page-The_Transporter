@@ -25,6 +25,7 @@
       a
             font-family: 'barlow Condensed'
             font-style: 1.7rem
+            font-size: 2rem
       .menu__logo
             img
                   @include animation-scale-opening()
@@ -63,7 +64,7 @@
 .menu-mobile--closed
       display: none
 
-
+// Work
 .work__content
       padding-top: 200px
       transform-origin: 0 0
@@ -112,6 +113,50 @@
       display: grid
       grid-template-columns: 1fr 1fr 1fr
       gap: 0
+
+
+.transporter
+      display: grid
+      grid-template-columns: 1fr 1fr
+      gap: 150px
+      height: 90vh
+      padding: 50px
+      .transporter__main
+            grid-column: 1/2
+            text-align: center
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            padding: 80px 0 200px 0
+            h1
+                  font-size: 4.5rem
+                  line-height: 1
+                  color: $c-blue
+            p
+                  font-family: 'barlow Condensed'
+                  width: 80%
+                  font-size: 2.2rem
+                  line-height: 1
+                  text-align: center
+                  line-height: 1.5
+                  color: $c-orange
+            button
+                  margin-top: 50px
+      .transporter__img
+            grid-column: 2/3
+            transform: skewY(-10deg)
+            height: 50%
+            width: 80%
+            margin-top: 100px
+            overflow: hidden
+            border-radius: 10px
+            img
+                  width: 101%
+                  margin-left: 40px
+                  transform: skewY(10deg) scale(1.4, 1.4)
+                  
+
 
 @import 'medias'
 // ===========================arriba

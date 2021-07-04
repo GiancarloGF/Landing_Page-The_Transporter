@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  background-color: #045174;
   font-family: "Work Sans", rial, Helvetica, sans-serif;
   line-height: 2;
   padding: 0;
@@ -22,7 +21,7 @@ body {
 }
 
 a {
-  color: #fbc00e;
+  color: #000028;
   text-decoration: none;
   padding: 10px;
   transition: color 0.2s ease-in-out;
@@ -43,6 +42,24 @@ h2 {
 h3 {
   font-size: 1.5rem;
   text-align: center;
+}
+
+.btn {
+  width: 60%;
+  height: 50px;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border-style: none;
+  transition: all 0.1s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn--contacto {
+  background: #000028;
+  color: #fff;
 }
 
 .menu {
@@ -72,6 +89,7 @@ h3 {
 .menu a {
   font-family: "barlow Condensed";
   font-style: 1.7rem;
+  font-size: 2rem;
 }
 .menu .menu__logo img {
   animation-name: opening-logo;
@@ -176,6 +194,54 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0;
+}
+
+.transporter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  height: 90vh;
+  padding: 50px;
+}
+.transporter .transporter__main {
+  grid-column: 1/2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 0 200px 0;
+}
+.transporter .transporter__main h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #000028;
+}
+.transporter .transporter__main p {
+  font-family: "barlow Condensed";
+  width: 80%;
+  font-size: 2.2rem;
+  line-height: 1;
+  text-align: center;
+  line-height: 1.5;
+  color: #e87a00;
+}
+.transporter .transporter__main button {
+  margin-top: 50px;
+}
+.transporter .transporter__img {
+  grid-column: 2/3;
+  transform: skewY(-10deg);
+  height: 50%;
+  width: 80%;
+  margin-top: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.transporter .transporter__img img {
+  width: 101%;
+  margin-left: 40px;
+  transform: skewY(10deg) scale(1.4, 1.4);
 }
 
 @keyframes opening-logo {
