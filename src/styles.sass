@@ -1,4 +1,5 @@
 @import 'global'
+@import 'utilities'
 
 
 
@@ -156,6 +157,48 @@
                   margin-left: 40px
                   transform: skewY(10deg) scale(1.4, 1.4)
                   
+.about
+    width: 50%
+    text-align: center
+    margin: 0 auto
+    padding-bottom: 150px
+
+// En about y contact    
+.columns
+      display: flex
+      justify-content: space-between 
+      gap: 20px
+
+
+// Contact
+.contact
+      background-color:#000
+      padding-top: 150px
+      color:#fff
+      transform: skewY(-10deg)
+      .contact-container
+            transform: skewY(10deg)
+            color: $c-blue
+            width: 1280px
+            margin: 0 auto
+            
+            h3
+                  color:#fff
+            .contact-us
+                  h3
+                        text-align: left
+            .emails
+                  text-align: right
+                  h3
+                        text-align: right
+            .social
+                  text-align: center
+                  path
+                        fill: $c-orange
+                  a
+                        svg
+                              &:hover
+                                    transform: scale(1.2)
 
 
 @import 'medias'

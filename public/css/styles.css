@@ -44,6 +44,16 @@ h3 {
   text-align: center;
 }
 
+footer {
+  background-color: #000;
+  height: 450px;
+  margin-top: -170px;
+}
+
+.section__title {
+  color: #000028;
+}
+
 .btn {
   width: 60%;
   height: 50px;
@@ -60,6 +70,18 @@ h3 {
 .btn--contacto {
   background: #000028;
   color: #fff;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-orange {
+  color: #e87a00;
+}
+
+.c-blue {
+  color: #000028;
 }
 
 .menu {
@@ -244,6 +266,53 @@ h3 {
   transform: skewY(10deg) scale(1.4, 1.4);
 }
 
+.about {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact {
+  background-color: #000;
+  padding-top: 150px;
+  color: #fff;
+  transform: skewY(-10deg);
+}
+.contact .contact-container {
+  transform: skewY(10deg);
+  color: #000028;
+  width: 1280px;
+  margin: 0 auto;
+}
+.contact .contact-container h3 {
+  color: #fff;
+}
+.contact .contact-container .contact-us h3 {
+  text-align: left;
+}
+.contact .contact-container .emails {
+  text-align: right;
+}
+.contact .contact-container .emails h3 {
+  text-align: right;
+}
+.contact .contact-container .social {
+  text-align: center;
+}
+.contact .contact-container .social path {
+  fill: #e87a00;
+}
+.contact .contact-container .social a svg:hover {
+  transform: scale(1.2);
+}
+
 @keyframes opening-logo {
   0% {
     transform: scale(0);
@@ -263,6 +332,17 @@ h3 {
     transform: translateY(0);
   }
 }
+@keyframes fade-in {
+  0% {
+    height: 0vh;
+  }
+  50% {
+    height: 150vh;
+  }
+  100% {
+    height: 0vh;
+  }
+}
 @media (max-width: 1450px) {
   .grid .work__item {
     padding: 0;
@@ -274,6 +354,18 @@ h3 {
 @media (max-width: 1280px) {
   .grid .work__item {
     height: 150px;
+  }
+
+  .contact .contact-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact .contact-container h3 {
+    text-align: center !important;
+  }
+  .contact .contact-container .emails {
+    text-align: center;
   }
 }
 @media (max-width: 900px) {
@@ -295,6 +387,15 @@ h3 {
 
   .menu-mobile__logo img {
     margin-top: 20px;
+  }
+
+  .columns {
+    flex-direction: column;
+    gap: 0;
+  }
+  .columns div {
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 540px) {
