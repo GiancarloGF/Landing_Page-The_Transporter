@@ -3,3 +3,48 @@
             transform: scale(0)       
       100%
             transform: scale(1)
+
+@keyframes bounce
+      0%
+            transform: translateY(500px)
+      80%
+            transform: translateY(-30px)
+      100%
+            transform: translateY(0)
+
+
+
+@media ( max-width: 1450px )
+      .grid
+            .work__item
+                  padding: 0
+                  position: relative
+                  overflow: hidden
+                  height: 250px
+@media ( max-width: 1280px )
+      .grid
+            .work__item
+                  height: 150px
+@media ( max-width: 900px )
+      .grid
+            grid-template-columns: 1fr 1fr
+            .work__item
+                  height: 150px
+@media ( max-width: 800px)
+      .menu
+            display: none //Para ocultar el menu principal
+            
+      .menu-mobile
+            display: block //Para mostrar el menu mobile
+            
+      .menu-mobile__logo
+            img
+                  margin-top: 20px
+
+@media ( max-width: 540px)
+      .menu-mobile__logo
+            padding-left: 30px
+      .grid
+            grid-template-columns: 1fr
+            .work__item
+                  height: 170px

@@ -1,5 +1,5 @@
 @import 'global'
-@import 'medias'
+
 
 
 
@@ -8,7 +8,7 @@
       text-align: center
       display: flex
       justify-content: space-between
-      margin: 100px auto 0 auto
+      margin: 20px auto 0 auto
       width: 50%
       align-items: center
       div
@@ -29,10 +29,11 @@
             img
                   @include animation-scale-opening()
                   
+                  
       
 // Menu mobile
 .menu-mobile
-      // display: none
+      display: none
       &:hover
             svg
                   fill: $c-orange
@@ -59,6 +60,60 @@
                  a
                        padding: 10px 0
                        display: block
+.menu-mobile--closed
+      display: none
+
+
+.work__content
+      padding-top: 200px
+      transform-origin: 0 0
+      transform: skewY(-10deg)
+      .work__item
+            padding: 0
+            position: relative //Para poder poner una capa encima de la otra
+            overflow: hidden //Para ocultar las partes que sobresalgan de las img 
+            height: 300px
+            img
+                  width: 100%
+                  margin-top: -60px
+                  transform: skewY(10deg) scale(1.2, 1.2)
+                  transition: all 0.075s
+            .item--bg-hover
+                  background-color: rgba(0, 0, 0, 0.7)
+                  width: 100%
+                  height: 150%
+                  display: grid
+                  position: absolute
+                  z-index: 2
+                  top: -25%
+                  opacity: 0
+                  transition: opacity 0.3s ease-in-out
+                  transform: skewY(10deg) scale(1.1)
+                  justify-items: center
+                  align-items: center
+                  text-align: center
+                  .title
+                        color: white
+                  .costumer
+                        color: $c-yellow
+      
+            &:hover
+                  img
+                        transform: skewY(10deg) scale(1.2, 1.2) 
+                  .item--bg-hover
+                        overflow: hidden
+                        opacity: 1
+                        .info
+                              animation-name: bounce
+                              animation-duration: 0.4s
+                              animation-timing-function: ease-in-out
+
+.grid
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      gap: 0
+
+@import 'medias'
 // ===========================arriba
 
       
