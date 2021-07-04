@@ -6,148 +6,60 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/styles.css">
       <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Work+Sans&display=swap');
+      </style>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
       <title>The Transporter</title>
 </head>
 <body>
-      <header class="sticky-top"> 
-            <div class="main-header ">
-                  <nav class="navbar navbar-expand-lg navbar-dark">
-                        <div class="container-fluid">
-                          <a class="navbar-brand" href="#">The transporter</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                              </li>
-                              <li class="nav-item">
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#servicios">Servicios</a>
-                                </li>
-                                <a class="nav-link" href="#nosotros">Nosotros</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#contacto" >Contacto</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                  </nav>
-            </div>
+    <div class="container">
+      <!-- HEADER -->
+      <header> 
+        <!-- Menu -->
+        <div class="menu">
+          <div class="menu__left">
+                <ul>
+                      <li><a href="#main">INICIO</a></li>
+                      <li><a href="#work">SERVICIOS</a></li>
+                </ul>
+          </div>
+          <div class="menu__logo">
+                <img src="img/logo.svg" alt="" srcset="">
+          </div>
+          <div class="menu__right">
+                <ul>
+                      <li><a href="#about">NOSOTROS</a></li>
+                      <li><a href="#contact">CONTACTO</a></li>
+                </ul>
+          </div>
+        </div>
+        <!-- Menu mobile -->
+        <div class="menu-mobile">
+          <div class="menu-mobile__content">
+                <div class="menu-mobile__header">
+                      <a href="#" class="menu-mobile__logo">
+                            <img src="../img/logo.svg" alt="" srcset="">
+                      </a>
+                      <a href="#" id="buttonOpenCloseMenu">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                      </a>
+                </div>
+
+                <div id="menu-mobile-items" class="menu-mobile--closed">
+                      <ul>
+                            <li><a href="#main">INICIO</a></li>
+                            <li><a href="#work">SERVICIOS</a></li>
+                            <li><a href="#about">NOSOTROS</a></li>
+                            <li><a href="#contact">CONTACTO</a></li>
+                      </ul>
+                </div>
+          </div>
+        </div>
+
       </header>
       <main>
-            <section class='section carousel'>
-                  <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100 carousel__img" alt="...">
-                            <div class="carousel-caption  d-md-block">
-                              <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100 carousel__img" alt="...">
-                            <div class="carousel-caption  d-md-block">
-                              <h5>Second slide label</h5>
-                              <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="https://via.placeholder.com/150" class="d-block w-100 carousel__img" alt="...">
-                            <div class="carousel-caption  d-md-block">
-                              <h5>Third slide label</h5>
-                              <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div> -->
-            </section>
-            <section class="section servicios" id="servicios">
-              <h1 class="section__title">Servicios</h1>
-              <div class="section__content servicios__content">
-                <div class="servicios__item one"></div>
-                <div class="servicios__item two"></div>
-                <div class="servicios__item three"></div>
-                <div class="servicios__item four"></div>
-                <div class="servicios__item five"></div>
-                <div class="servicios__item six"></div>
-                <div class="servicios__item seven"></div>
-                <div class="servicios__item eight"></div>
-                <div class="servicios__item nine"></div>
-                <div class="servicios__item ten"></div>
-                <div class="servicios__item eleven"></div>
-              </div>
-            </section>
-
-            <section class="section nosotros" id="nosotros">
-                  <h1 class="section__title">Nosotros</h1>
-                  <div class="section__content nosotros__content">
-                    <div class="nosotros__block quienes">
-                      <h2>¿Quienes somos?</h2>
-                      <p>THE TRANSPORTER, es una empresa dedicada a
-                        prestar SERVICIOS DE TAXI, desarrollando una amplia
-                        gama de servicios para las necesidades de los clientes.
-                        Nuestro deseo es llegar a los usuarios para brindarle
-                        un Servicio personalizado por ello teniendo en cuenta
-                        la importancia del tiempo de nuestros usuarios nos
-                        ponemos a disposición las 24 horas del día y los 365
-                        días del año.</p>
-                    </div>
-                    <div class="img-nosotros">
-                      <!-- <img src="https://via.placeholder.com/400x250" alt=""> -->
-                    </div>
-                    <div class="nosotros__block mision">
-                      <h2>Mision</h2>
-                      <p class="ision__paraf">Brindar un servicio eficaz y eficiente complementando
-                        con seguridad , comodidad y puntualidad a los usuarios,
-                        nuestro compromiso en cada día es brindarle un
-                        servicio de calidad desde la recepción del servicio hasta
-                        la ejecución del servicio solicitado.</p>
-                    </div>
-                    <div class="nosotros__block vision">
-                      <h2>Vision</h2>
-                      <p class="ision__paraf">Ser una empresa líder en nuestro rubro y cultivar el
-                        uso de TAXI REMISSE en nuestro departamento,
-                        apoyado en unidades modernas y optimas con un
-                        servicio personalizado fomentando principios y
-                        valores Morales.</p>
-                    </div>
-                  </div>
-            </section>
-            <section class="section contacto" id="contacto">
-                  <h1 class="section__title">Contacto</h1>
-                  <div class="section__content contacto__content">
-                    <div class="contacto__social"></div>
-
-                    <form action="#" method="post" class="contacto__form">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Solicitud</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                    </form>
-                  </div>
-            </section>
 
       </main>
       <footer>
@@ -156,6 +68,7 @@
             </div>
 
       </footer>
+    
       <script src="./scripts.js"></script>
       <!-- Bootstrap JS-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

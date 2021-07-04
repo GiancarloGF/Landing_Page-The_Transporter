@@ -1,94 +1,39 @@
-/** ===================
-      VARIABLES
-      ================= **/
-$color-1: #000
-$color-2: #fff
-$color-3: yellow
-$color-4: skyblue
 
-$brkpnt-1: 850px
-/** ===================
-      MIXINS
-      ================= **/
+$c-yellow:#fbc00e
+$c-blue:#045174
+$c-orange:#e87a00
+ 
+// ==========================================abajo
+@mixin animation-scale-opening($duration: 1.6s,$timing: ease-in-out)
+      animation-name: opening-logo
+      animation-duration: $duration
+      animation-timing-function: $timing
 
-      
-// To positioning services'items
-@mixin grid-position($gri, $gre,$gci,$gce)
-      grid-row-start: $gri
-      grid-row-end: $gre
-      grid-column-start: $gci
-      grid-column-end: $gce
-      
-@mixin f-center-total($direction)
-      display: flex
-      flex-direction: $direction
-      justify-content: center
-      align-items: center
-/** ===================
-      GLOBAL
-      ================= **/   
 *
+      font-size: 16px
       margin: 0
       padding: 0
       box-sizing: border-box
 
-
+html
+      scroll-behavior: smooth
 
 body
-      width: 100%
-main
-      width: 100%
-p
-      height: 50%
+      background-color: $c-blue
+      font-family: 'Work Sans', rial, Helvetica, sans-serif
+      line-height:2
+      padding: 0
+      margin: 0
 
-form
-      grid-column: 3/5
-      align-self: center
+::selection
+      background-color: $c-orange
 
-/** ===================
-      Custom Bootstrap
-      ================= **/   
-.navbar
-      background-color: $color-1 !important
+a
+      color: $c-yellow
+      text-decoration: none
+      padding: 10px
+      transition: color 0.2s ease-in-out
+      &:hover
+            color: $c-orange
+// ==========================================arriba
 
-.navbar-collapse
-      justify-content: flex-end
-
-/** ===================
-      Components
-      ================= **/
-.section
-      width: 100%
-      height:100vh
-      padding: 5%
-      text-align: center
-      display: grid
-      grid-template-columns: 1fr
-      grid-template-rows: 10% 90%
-
-/** ===================
-      POSITIONS ITEMS
-      ================= **/
-
-.one
-      @include grid-position(1,2,1,3)
-.two
-      @include grid-position(1,2,3,5)
-.three
-      @include grid-position(2,3,1,2)
-.four
-      @include grid-position(2,3,2 ,3)
-.five
-      @include grid-position(2,3,3,4)
-.six
-      @include grid-position(2,3,4,5)
-.seven
-      @include grid-position(3,4,1,2)
-.eight
-      @include grid-position(3,4,2,3)
-.nine
-      @include grid-position(3,4,3,4)
-.ten
-      @include grid-position(3,4,4,5)
-.eleven
-      @include grid-position(4,5,1,5)
