@@ -21,6 +21,8 @@
 
 
 @media ( max-width: 1450px )
+      .transporter__img
+            margin-top: 50px
       .grid
             .work__item
                   padding: 0
@@ -42,10 +44,43 @@
                         text-align: center
       
 @media ( max-width: 900px )
+      .transporter
+            background: url(../img/main-2.jpg) no-repeat rgb(0,0,0,0.1)
+            background-position-x: -300px
+            background-size: cover
+            // transform: skewY(-10deg)
+            grid-template-columns: 1fr
+            height: 95vh
+            .transporter__main
+                  transform: skewY(-10deg)
+                  background-color: rgba(0,0,0,0.5)
+                  height: 50%
+                  margin-top: 80px
+                  padding-top: 100px
+                  
+                  h1
+                        font-size: 5rem
+                        transform: skewY(10deg)
+                  p
+                        font-size: 3rem
+                        font-weight: bolder
+                        transform: skewY(10deg)
+                  button
+                        transform: skewY(10deg)
+                        
+            .transporter__img
+                  display: none
       .grid
             grid-template-columns: 1fr 1fr
             .work__item
                   height: 150px
+      .btn
+            width: 50%
+            height: 500px
+            font-size: 3rem
+            
+            
+            
 @media ( max-width: 800px)
       .menu
             display: none //Para ocultar el menu principal
