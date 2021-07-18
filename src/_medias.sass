@@ -15,7 +15,7 @@
       0%
             height: 0vh
       50%
-            height: 150vh
+            height: 160vh
       100%
             height: 0vh
 
@@ -45,28 +45,31 @@
       
 @media ( max-width: 900px )
       .transporter
-            background: url(../img/main-2.jpg) no-repeat rgb(0,0,0,0.1)
-            background-position-x: -300px
+            background: none
+            display: flex
+            align-items: center
+            justify-content: center
+            // background-position-x: -700px
             background-size: cover
             // transform: skewY(-10deg)
-            grid-template-columns: 1fr
+            
             height: 95vh
             .transporter__main
-                  transform: skewY(-10deg)
-                  background-color: rgba(0,0,0,0.5)
+                  transform: none
+                  background-color: rgba(0,0,0,0.0)
                   height: 50%
                   margin-top: 80px
                   padding-top: 100px
                   
                   h1
                         font-size: 5rem
-                        transform: skewY(10deg)
+                        transform: none
                   p
                         font-size: 3rem
                         font-weight: bolder
-                        transform: skewY(10deg)
+                        transform: none
                   button
-                        transform: skewY(10deg)
+                        transform: none
                         
             .transporter__img
                   display: none
@@ -105,3 +108,31 @@
             grid-template-columns: 1fr
             .work__item
                   height: 170px
+
+      html
+            width: 620px
+            
+      .transporter
+            background: none
+            .transporter__main
+                  display: flex
+                  margin-right: 100px
+                  background-color: transparent
+                  transform: none
+                  // width: 100%
+                  // height: 100%
+                  h1
+                        transform: skewY(0deg)
+                  p
+                        transform: skewY(0deg)
+                  button
+                        transform: skewY(0deg)
+                        
+            
+      .btn--contacto
+            width: 60%
+            padding: 20px
+            font-size: 3rem
+
+      .work
+            margin-top: 200px

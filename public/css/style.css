@@ -56,7 +56,6 @@ footer {
 
 .btn {
   width: 45%;
-  height: 50px;
   font-size: 1.8rem;
   border-radius: 10px;
   cursor: pointer;
@@ -270,7 +269,10 @@ footer {
 }
 
 .about {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 150px;
@@ -363,10 +365,10 @@ span {
   background-color: #e87a00;
   position: fixed;
   z-index: 100;
-  top: -300px;
+  top: -170px;
   left: 0;
-  width: 100vw;
-  height: 10vh;
+  width: 100%;
+  height: 0vh;
   transform: skewY(-10deg);
   transition: all 0.45s;
   animation-timing-function: lineal;
@@ -405,7 +407,7 @@ span {
     height: 0vh;
   }
   50% {
-    height: 150vh;
+    height: 160vh;
   }
   100% {
     height: 0vh;
@@ -442,30 +444,31 @@ span {
 }
 @media (max-width: 900px) {
   .transporter {
-    background: url(../img/main-2.jpg) no-repeat rgba(0, 0, 0, 0.1);
-    background-position-x: -300px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
-    grid-template-columns: 1fr;
     height: 95vh;
   }
   .transporter .transporter__main {
-    transform: skewY(-10deg);
-    background-color: rgba(0, 0, 0, 0.5);
+    transform: none;
+    background-color: rgba(0, 0, 0, 0);
     height: 50%;
     margin-top: 80px;
     padding-top: 100px;
   }
   .transporter .transporter__main h1 {
     font-size: 5rem;
-    transform: skewY(10deg);
+    transform: none;
   }
   .transporter .transporter__main p {
     font-size: 3rem;
     font-weight: bolder;
-    transform: skewY(10deg);
+    transform: none;
   }
   .transporter .transporter__main button {
-    transform: skewY(10deg);
+    transform: none;
   }
   .transporter .transporter__img {
     display: none;
@@ -516,6 +519,39 @@ span {
   }
   .grid .work__item {
     height: 170px;
+  }
+
+  html {
+    width: 620px;
+  }
+
+  .transporter {
+    background: none;
+  }
+  .transporter .transporter__main {
+    display: flex;
+    margin-right: 100px;
+    background-color: transparent;
+    transform: none;
+  }
+  .transporter .transporter__main h1 {
+    transform: skewY(0deg);
+  }
+  .transporter .transporter__main p {
+    transform: skewY(0deg);
+  }
+  .transporter .transporter__main button {
+    transform: skewY(0deg);
+  }
+
+  .btn--contacto {
+    width: 60%;
+    padding: 20px;
+    font-size: 3rem;
+  }
+
+  .work {
+    margin-top: 200px;
   }
 }
 

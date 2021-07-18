@@ -161,7 +161,10 @@
                   transform: skewY(10deg) scale(1.4, 1.4)
                   
 .about
-    width: 50%
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    width: 80%
     text-align: center
     margin: 0 auto
     padding-bottom: 150px
@@ -245,10 +248,10 @@ span
       background-color: $c-orange
       position: fixed
       z-index: 100
-      top: -300px
+      top: -170px
       left: 0
-      width: 100vw
-      height: 10vh //Tamaño inicial para que no se muestre
+      width: 100%
+      height: 0vh //Tamaño inicial para que no se muestre
       transform: skewY(-10deg)
       transition: all 0.45s
       animation-timing-function: lineal
