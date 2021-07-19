@@ -7,11 +7,12 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
   font-family: "Work Sans", rial, Helvetica, sans-serif;
-  line-height: 2;
+  line-height: 1;
   padding: 0;
   margin: 0;
 }
@@ -37,17 +38,22 @@ h2, h3 {
 h2 {
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 h3 {
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 1.2rem;
 }
 
-footer {
-  background-color: #000;
-  height: 450px;
-  margin-top: -170px;
+p {
+  padding: 10px;
+  font-size: clamp(1rem, 1.3rem, 2rem);
+}
+
+div.slot {
+  height: 50%;
 }
 
 .section__title {
@@ -55,8 +61,8 @@ footer {
 }
 
 .btn {
-  width: 45%;
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 2rem, 3rem);
+  padding: 20px;
   border-radius: 10px;
   cursor: pointer;
   border-style: none;
@@ -81,6 +87,10 @@ footer {
 
 .c-blue {
   color: #000028;
+}
+
+.main {
+  position: relative;
 }
 
 .menu {
@@ -164,6 +174,7 @@ footer {
   padding-top: 200px;
   transform-origin: 0 0;
   transform: skewY(-10deg);
+  margin-bottom: 20px;
 }
 .work__content .work__item {
   padding: 0;
@@ -231,17 +242,16 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 50px 0 200px 0;
 }
 .transporter .transporter__main h1 {
-  font-size: 4.5rem;
+  font-size: clamp(1.5rem, 4.5rem, 6rem);
   line-height: 1;
   color: #000028;
 }
 .transporter .transporter__main p {
   font-family: "barlow Condensed";
   width: 80%;
-  font-size: 2.2rem;
+  font-size: clamp(1rem, 2.2rem, 4rem);
   line-height: 1;
   text-align: center;
   line-height: 1.5;
@@ -272,29 +282,39 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: start;
+  gap: 40px;
   width: 80%;
-  text-align: center;
+  height: 90vh;
+  text-align: justify;
   margin: 0 auto;
-  padding-bottom: 150px;
 }
 
 .columns {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  gap: 20px;
 }
 
 .contact {
   background-color: #000;
   padding-top: 150px;
   color: #fff;
-  transform: skewY(-10deg);
+  height: 60vh;
+  position: relative;
+  margin-top: -50px;
 }
 .contact .contact-container {
-  transform: skewY(10deg);
   color: #000028;
-  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
   margin: 0 auto;
+}
+.contact .contact-container .contact__columns {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
 .contact .contact-container h3 {
   color: #fff;
@@ -313,6 +333,9 @@ footer {
 }
 .contact .contact-container .social path {
   fill: #e87a00;
+}
+.contact .contact-container .social a svg {
+  margin-top: 25px;
 }
 .contact .contact-container .social a svg:hover {
   transform: scale(1.2);
@@ -449,21 +472,16 @@ span {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 95vh;
   }
   .transporter .transporter__main {
     transform: none;
     background-color: rgba(0, 0, 0, 0);
     height: 50%;
-    margin-top: 80px;
-    padding-top: 100px;
   }
   .transporter .transporter__main h1 {
-    font-size: 5rem;
     transform: none;
   }
   .transporter .transporter__main p {
-    font-size: 3rem;
     font-weight: bolder;
     transform: none;
   }
@@ -480,12 +498,6 @@ span {
   .grid .work__item {
     height: 150px;
   }
-
-  .btn {
-    width: 50%;
-    height: 500px;
-    font-size: 3rem;
-  }
 }
 @media (max-width: 800px) {
   .menu {
@@ -501,12 +513,12 @@ span {
   }
 
   .columns {
-    flex-direction: column;
-    gap: 0;
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(3, 1fr);
+    height: 80%;
   }
   .columns div {
     width: 100%;
-    text-align: center;
   }
 }
 @media (max-width: 540px) {
@@ -530,7 +542,6 @@ span {
   }
   .transporter .transporter__main {
     display: flex;
-    margin-right: 100px;
     background-color: transparent;
     transform: none;
   }
@@ -542,12 +553,6 @@ span {
   }
   .transporter .transporter__main button {
     transform: skewY(0deg);
-  }
-
-  .btn--contacto {
-    width: 60%;
-    padding: 20px;
-    font-size: 3rem;
   }
 
   .work {

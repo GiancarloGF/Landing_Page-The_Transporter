@@ -18,11 +18,12 @@ $c-orange:#e87a00
 
 html
       scroll-behavior: smooth
+      font-size: 100%
 
 body
       // background-color: $c-blue
       font-family: 'Work Sans', rial, Helvetica, sans-serif
-      line-height:2
+      line-height: 1
       padding: 0
       margin: 0
       // display: flex
@@ -45,20 +46,26 @@ h2, h3
 h2
       font-size: 3rem
       text-align: center
+      margin-bottom: 2rem
 h3
       font-size: 1.5rem
       text-align: center
-footer
-      background-color:#000
-      height: 450px
-      margin-top: -170px
+      margin-bottom: 1.2rem
 
+p
+
+      padding: 10px
+      font-size: clamp(1rem, 1.3rem, 2rem)
+
+div.slot
+      height: 50%
 .section__title
       color: $c-blue
 .btn
-      width: 45%
+      // width: 45%
       // height: 50px
-      font-size: 1.8rem
+      font-size: clamp(1rem, 2rem, 3rem)
+      padding: 20px
       border-radius: 10px
       cursor: pointer
       border-style: none

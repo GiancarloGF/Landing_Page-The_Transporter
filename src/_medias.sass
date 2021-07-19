@@ -53,19 +53,19 @@
             background-size: cover
             // transform: skewY(-10deg)
             
-            height: 95vh
+            // height: 95vh
             .transporter__main
                   transform: none
                   background-color: rgba(0,0,0,0.0)
                   height: 50%
-                  margin-top: 80px
-                  padding-top: 100px
+                  // margin-top: 80px
+                  // padding-top: 100px
                   
                   h1
-                        font-size: 5rem
+                        // font-size: 5rem
                         transform: none
                   p
-                        font-size: 3rem
+                        // font-size: 3rem
                         font-weight: bolder
                         transform: none
                   button
@@ -77,10 +77,10 @@
             grid-template-columns: 1fr 1fr
             .work__item
                   height: 150px
-      .btn
-            width: 50%
-            height: 500px
-            font-size: 3rem
+      // .btn
+      //       width: 50%
+      //       height: 500px
+      //       font-size: 3rem
             
             
             
@@ -95,11 +95,13 @@
             img
                   margin-top: 20px
       .columns
-            flex-direction: column
-            gap: 0
+            grid-template-columns: 1fr
+            grid-auto-rows: repeat(3,1fr)
+            height: 80%
+            // gap: 0
             div
                   width: 100%
-                  text-align: center
+                  // text-align: justify
 
 @media ( max-width: 540px)
       .menu-mobile__logo
@@ -116,7 +118,7 @@
             background: none
             .transporter__main
                   display: flex
-                  margin-right: 100px
+                  // margin-right: 100px
                   background-color: transparent
                   transform: none
                   // width: 100%
@@ -129,10 +131,10 @@
                         transform: skewY(0deg)
                         
             
-      .btn--contacto
-            width: 60%
-            padding: 20px
-            font-size: 3rem
+      // .btn--contacto
+      //       width: 60%
+      //       padding: 20px
+      //       // font-size: 3rem
 
       .work
             margin-top: 200px
