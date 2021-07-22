@@ -67,6 +67,9 @@
       display: none
 
 // Work
+
+.work
+      padding-top: 10px
 .work__content
       padding-top: 200px
       transform-origin: 0 0
@@ -79,7 +82,7 @@
             height: 300px
             img
                   width: 100%
-                  margin-top: -60px
+                  margin-top: -30px
                   transform: skewY(10deg) scale(1.2, 1.2)
                   transition: all 0.075s
             .item--bg-hover
@@ -162,29 +165,47 @@
                   margin-left: 40px
                   transform: skewY(10deg) scale(1.4, 1.4)
                   
-.about
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    justify-content: start
-    gap: 40px
-    width: 80%
-    height: 90vh
-    text-align: justify
-    margin: 0 auto
-//     p
-//           padding: 10px
-//             font-size: clamp(1rem, 2.5vw, 3rem)
+
+
 
 
 
             
 
-// En about y contact    
+//about 
+
+.about
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: flex-start
+    gap: 40px
+    width: 90%
+    height: 90vh
+    text-align: justify
+    margin: 0 auto
+    padding-top: 10px
+
+.bg__nosotros
+      display: grid
+      grid-template-columns: repeat(3,1fr)
+      justify-content: space-between
+      column-gap: 1%
+      height: 30%
+      .quienes
+            @include background('../img/driver-rafiki.svg')
+      .mision
+            @include background('../img/mat-rafiki.svg')
+      .vision
+            @include background('../img/ride-bro.svg')
+
+  
 .columns
       display: grid
       grid-template-columns: repeat(3,1fr)
       justify-content: space-between
+      column-gap: 1%
+      
       
 
 

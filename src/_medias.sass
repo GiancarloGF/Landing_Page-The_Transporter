@@ -77,10 +77,16 @@
             grid-template-columns: 1fr 1fr
             .work__item
                   height: 150px
-      // .btn
-      //       width: 50%
-      //       height: 500px
-      //       font-size: 3rem
+      
+      .about
+            justify-content: space-evenly
+      .bg__nosotros
+            display: none
+      .columns
+            grid-template-columns: 1fr
+            row-gap: 5%
+            
+
             
             
             
@@ -95,13 +101,9 @@
             img
                   margin-top: 20px
       .columns
-            grid-template-columns: 1fr
-            grid-auto-rows: repeat(3,1fr)
-            height: 80%
-            // gap: 0
-            div
-                  width: 100%
-                  // text-align: justify
+            row-gap: 0      
+            
+            
 
 @media ( max-width: 540px)
       .menu-mobile__logo
@@ -129,12 +131,5 @@
                         transform: skewY(0deg)
                   button
                         transform: skewY(0deg)
-                        
-            
-      // .btn--contacto
-      //       width: 60%
-      //       padding: 20px
-      //       // font-size: 3rem
-
       .work
             margin-top: 200px

@@ -1,7 +1,7 @@
 
 $c-yellow:#fbc00e
 // $c-blue:#045174
-$c-blue:#000028
+$c-blue:rgb(0, 0, 40)
 $c-orange:#e87a00
  
 // ==========================================abajo
@@ -9,6 +9,14 @@ $c-orange:#e87a00
       animation-name: opening-logo
       animation-duration: $duration
       animation-timing-function: $timing
+
+@mixin background($url)
+      background: url($url)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      
+      
 
 *
       font-size: 16px
@@ -55,7 +63,7 @@ h3
 p
 
       padding: 10px
-      font-size: clamp(1rem, 1.3rem, 2rem)
+      font-size: clamp(0.8rem, 1.3rem, 2rem)
 
 div.slot
       height: 50%
