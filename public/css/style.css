@@ -293,6 +293,7 @@ div.slot {
   text-align: justify;
   margin: 0 auto;
   padding-top: 10px;
+  color: #000028;
 }
 
 .bg__nosotros {
@@ -329,7 +330,7 @@ div.slot {
 }
 
 .contact {
-  background-color: #000;
+  background-color: #000028;
   padding-top: 150px;
   color: #fff;
   height: 60vh;
