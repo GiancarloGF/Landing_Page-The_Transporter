@@ -373,6 +373,14 @@ div.slot {
   transform: scale(1.2);
 }
 
+.fab, .far {
+  font-size: 3rem;
+  color: #e87a00;
+}
+.fab:hover, .far:hover {
+  transform: scale(1.2);
+}
+
 #details-container {
   background-color: #000028;
   position: fixed;
